@@ -5,4 +5,8 @@
 from frappe.model.document import Document
 
 class Vehicle(Document):
-	pass
+	def before_save(self):
+		self.set_title()
+     
+	def set_title(self):
+		self.title = f"{self.make} {self.model}, {self.year}"

@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:RO-{MM}-{YYYY}-{##}",
+ "creation": "2024-07-16 15:04:26.970254",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_name",
+  "contact_number",
+  "pickup_time",
+  "vehicle",
+  "column_break_kn3mj",
+  "status",
+  "pickup_address"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pickup_address",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Pickup Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Contact Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pickup_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Pickup Time",
+   "reqd": 1
+  },
+  {
+   "default": "New",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "New\nAccepted\nRejected"
+  },
+  {
+   "fieldname": "column_break_kn3mj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "Vehicle",
+   "options": "Vehicle"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-16 17:11:40.372305",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "Ride Order",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

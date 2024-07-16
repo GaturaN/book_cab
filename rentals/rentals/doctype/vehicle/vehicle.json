@@ -8,6 +8,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "title",
   "make",
   "model",
   "column_break_divof",
@@ -54,11 +55,17 @@
   {
    "fieldname": "column_break_divof",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-16 12:23:16.862831",
+ "modified": "2024-07-16 16:31:13.274381",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
@@ -78,8 +85,10 @@
    "write": 1
   }
  ],
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "title",
  "track_changes": 1
 }

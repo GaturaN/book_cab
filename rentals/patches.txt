@@ -1,0 +1,1 @@
+rentals.rentals.doctype.vehicle.patches.set_title
