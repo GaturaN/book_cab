@@ -4,5 +4,11 @@
     <h1>{{ title }}</h1>
     <h2>Color: {{color}}</h2>
 
-    <img src="{{doc.image}}" />
+    {% if image%}
+        <img src="{{image}}" />
+    {% else %}
+        <span> No image available</span>
+    {%endif%}
+
+    <a class="btn btn-info" href="/order-a-ride/new?vehicle={{name}}"> Book Ride</a>
 {% endblock %}
