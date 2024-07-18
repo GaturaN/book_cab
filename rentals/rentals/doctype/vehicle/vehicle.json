@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_import": 1,
  "autoname": "autoincrement",
  "creation": "2024-07-16 12:03:33.621976",
@@ -11,10 +12,13 @@
   "title",
   "make",
   "model",
+  "color",
   "column_break_divof",
   "year",
   "license_plate",
-  "color"
+  "is_published",
+  "route",
+  "image"
  ],
  "fields": [
   {
@@ -61,11 +65,29 @@
    "fieldtype": "Data",
    "label": "Title",
    "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
  "links": [],
- "modified": "2024-07-16 16:31:13.274381",
+ "modified": "2024-07-18 17:19:58.534365",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
@@ -85,6 +107,7 @@
    "write": 1
   }
  ],
+ "route": "cars",
  "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",

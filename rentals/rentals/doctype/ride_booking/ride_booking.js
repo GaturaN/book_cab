@@ -30,4 +30,7 @@ frappe.ui.form.on("Ride Booking Item", {
     // frappe.model.set_value(cdt, cdn, "source", "Updated Source")
     frm.trigger("update_total_amount");
   },
+  items_remove(frm){
+	frm.trigger("update_total_amount")
+  }
 });
