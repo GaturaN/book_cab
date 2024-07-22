@@ -5,6 +5,11 @@ app_description = "Manage Rentals in Frappe"
 app_email = "gaturanjenga@gmail.com"
 app_license = "MIT"
 
+
+fixtures
+
+
+
 # Includes in <head>
 # ------------------
 
