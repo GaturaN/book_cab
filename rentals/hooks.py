@@ -6,7 +6,9 @@ app_email = "gaturanjenga@gmail.com"
 app_license = "MIT"
 
 
-fixtures
+fixtures = [
+    "Vehicle Type"
+]
 
 
 
