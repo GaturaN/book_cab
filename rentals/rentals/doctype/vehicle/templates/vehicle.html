@@ -1,14 +1,12 @@
-{% extends "templates/web.html" %} 
+{% extends "templates/web.html" %} {% block page_content %}
+<h1>{{ title }}</h1>
+<h2>Color: {{color}}</h2>
 
-{% block page_content %}
-    <h1>{{ title }}</h1>
-    <h2>Color: {{color}}</h2>
+{% if image%}
+<img src="{{image}}" />
+{% else %}
+<span> No image available</span>
+{%endif%}
 
-    {% if image%}
-        <img src="{{image}}" />
-    {% else %}
-        <span> No image available</span>
-    {%endif%}
-
-    <a class="btn btn-info" href="/order-a-ride/new?vehicle={{name}}"> Book Ride</a>
+<a class="btn btn-info" href="/book-a-ride/new?vehicle={{name}}"> Book Ride</a>
 {% endblock %}
